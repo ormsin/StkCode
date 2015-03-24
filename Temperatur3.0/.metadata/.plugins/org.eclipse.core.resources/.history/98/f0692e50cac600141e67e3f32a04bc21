@@ -1,0 +1,8 @@
+
+public class Beispiel {
+	public static void main(String[] args){
+		BerechneBinaer binaer1 = new BerechneBinaer(3);
+		System.out.println(binaer1.Ausdruck(23));
+	}
+
+}

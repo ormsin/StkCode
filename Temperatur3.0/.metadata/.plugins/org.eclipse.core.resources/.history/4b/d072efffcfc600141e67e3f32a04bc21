@@ -1,0 +1,18 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	int result=0;
+	
+	public BerechneBinaer(){
+	}
+	
+	public int binaerBerechnen(int number){
+		while(number%10!=0){
+			result = result+(number%10);
+			number = number/10;
+			System.out.println("laLa");
+		}
+		return result;
+	}
+
+}

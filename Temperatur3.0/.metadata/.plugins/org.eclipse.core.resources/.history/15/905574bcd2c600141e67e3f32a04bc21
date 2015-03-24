@@ -1,0 +1,30 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	int result = 0;
+	int power = 0;
+	
+	public BerechneBinaer(){
+	}
+	
+	public int normalQuersummeBerechnen(int number){
+		while(number%10!=0){
+			result = result+(number%10);
+			number = number/10;
+			System.out.println("laLa");
+		}
+		return result;
+	}
+	
+	public int binaerBerechnen(int number){
+		int anzahl = number;
+		while(number>0){
+			result = result + ((number%10)*((int)Math.pow(2, power)));
+			number = number/10;
+			power++;
+		}
+		System.out.print("Die Dezimalzahl "+anzahl+" --> die Binaerzahl ");
+		return result;
+	}
+
+}

@@ -1,0 +1,16 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	double i;
+	
+	public BerechneBinaer(){
+	}
+	
+	public double binaerBerechnen(double number){
+		while(number/10>0){
+			i=3;
+		}
+		return i;
+	}
+
+}

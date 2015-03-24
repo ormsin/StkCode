@@ -1,0 +1,9 @@
+
+public class Beispiel {
+	public static void main(String[] args){
+		BerechneBinaer binaer1 = new BerechneBinaer();
+		//System.out.println(binaer1.normalQuersummeBerechnen(123));
+		System.out.println(binaer1.binaerBerechnen(12345));
+	}
+
+}

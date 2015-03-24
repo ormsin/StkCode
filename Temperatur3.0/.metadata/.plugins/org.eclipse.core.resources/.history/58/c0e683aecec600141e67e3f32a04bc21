@@ -1,0 +1,16 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	double i;
+	
+	public BerechneBinaer(){
+	}
+	
+	public double binaerBerechnen(double number){
+		double a = number%10;
+		double b = number%100 - a;
+		double result = a + b/10;
+		return result;
+	}
+
+}

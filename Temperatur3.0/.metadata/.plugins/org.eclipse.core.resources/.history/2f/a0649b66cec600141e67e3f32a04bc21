@@ -1,0 +1,14 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	double i;
+	
+	public BerechneBinaer(){
+	}
+	
+	public double binaerBerechnen(double number){
+		number = number*2;
+		return number;
+	}
+
+}

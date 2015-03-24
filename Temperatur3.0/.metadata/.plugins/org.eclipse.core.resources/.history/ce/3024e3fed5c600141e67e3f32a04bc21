@@ -1,0 +1,30 @@
+
+public class BerechneBinaer {
+	double binaerNummer; //braucht das nicht
+	int result = 0; //die "result" Variable. Damit speichern wir danach ein Ergebnis.
+	int power = 0; //Exponent zweier Potenz
+	
+	public BerechneBinaer(){ //Konstruktor
+	}
+	
+	public int normalQuersummeBerechnen(int number){
+		while(number%10!=0){
+			result = result+(number%10);
+			number = number/10;
+			System.out.println("laLa");
+		}
+		return result;
+	}
+	
+	public int umrechneBinaerzahl(int number){ //diese Methode umrechnet aus dem Binaersystem ins Dezimalsystem
+		int dezimalZahl = number; //die Variable "anzahl" wird gebraucht, um spŠter die Dezimalzahl zu zeigen.
+		while(number>0){ //solange nicht jede Stelle umgerechnet wird, funktionieren die Anweisungen dadrin noch.
+			result = result + ((number%10)*((int)Math.pow(2, power))); //jede Stelle von der Zahl wird mit zweier Potenz umgerechnet. Und wird mit vorheriger Stelle addiert.
+			number = number/10; //mach die Zahl kleiner, um weitere Stellen berechnen zu kšnnen
+			power++; //vergršssert den Exponent zweier Potenz um 1
+		}
+		System.out.print("Die Dezimalzahl "+dezimalZahl+" --> Die Binaerzahl "); //druck das Output in einem Satz aus.
+		return result; //druck das Ergebnis mit dem ganzen Satz.
+	}
+
+}

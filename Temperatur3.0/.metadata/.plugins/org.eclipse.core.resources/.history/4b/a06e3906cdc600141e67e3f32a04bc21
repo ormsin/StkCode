@@ -1,0 +1,17 @@
+
+public class BerechneBinaer {
+	double binaerNummer;
+	double i;
+	
+	public BerechneBinaer(){
+	}
+	
+	public double binaerBerechnen(double bi){
+		if(bi/10>0){
+			System.out.println("Hello");
+			bi = bi/10;
+		}
+		return i;
+	}
+
+}
